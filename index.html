@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baltigo Flix - IPTV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>Baltigo Flix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h2>Assista aos Melhores Conteúdos</h2>
+            <p>Se você está buscando o melhor conteúdo de IPTV, chegou ao lugar certo!</p>
+            <a href="#planos" class="btn">Escolha seu Plano</a>
+        </div>
+    </section>
+
+    <!-- PLANOS SECTION -->
+    <section id="planos" class="planos">
+        <h2>Escolha seu Plano</h2>
+        <div class="planos-container">
+            <div class="plano">
+                <img src="https://via.placeholder.com/300x200" alt="Plano Básico">
+                <h3>Plano Básico</h3>
+                <p>R$ 50/mês</p>
+                <p>Acesso limitado a canais HD</p>
+                <a href="pagamento.html" class="btn">Comprar</a>
+            </div>
+            <div class="plano">
+                <img src="https://via.placeholder.com/300x200" alt="Plano Premium">
+                <h3>Plano Premium</h3>
+                <p>R$ 100/mês</p>
+                <p>Acesso a todos os canais + Filmes e Séries</p>
+                <a href="pagamento.html" class="btn">Comprar</a>
+            </div>
+            <div class="plano">
+                <img src="https://via.placeholder.com/300x200" alt="Plano Ultimate">
+                <h3>Plano Ultimate</h3>
+                <p>R$ 150/mês</p>
+                <p>Acesso ilimitado com qualidade 4K</p>
+                <a href="pagamento.html" class="btn">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPORTE SECTION -->
+    <section id="suporte" class="suporte">
+        <h2>Precisa de Suporte?</h2>
+        <p>Entre em contato conosco para mais informações.</p>
+        <a href="mailto:support@baltigoflix.com" class="btn">Contactar Suporte</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Baltigo Flix | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* HOME SECTION */
+.home {
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.home-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .btn {
+    background-color: #e50914;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home .btn:hover {
+    background-color: #f40612;
+}
+
+/* PLANOS SECTION */
+.planos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.planos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.plano {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.plano img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.plano h3 {
+    margin: 20px 0;
+}
+
+.plano .btn {
+    background-color: #e50914;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.plano .btn:hover {
+    background-color: #f40612;
+}
+
+/* SUPORTE SECTION */
+.suporte {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.suporte .btn {
+    background-color: #e50914;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.suporte .btn:hover {
+    background-color: #f40612;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagamento - Baltigo Flix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Baltigo Flix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pagamento">
+        <h2>Escolha seu Método de Pagamento</h2>
+        <p>Selecione uma opção abaixo para continuar com o pagamento do seu plano.</p>
+
+        <!-- Exemplo de botão de pagamento -->
+        <a href="https://www.paypal.com" class="btn">Pagar com PayPal</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Baltigo Flix | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+// Função para rolagem suave quando clicar em links de navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Adicionando um efeito de scroll suave ao carregar a página
+window.addEventListener('load', () => {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    window.scrollTo(0, headerHeight);
+});
+
+// Adicionando efeitos nos botões quando o mouse passar por cima
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', function() {
+        this.style.transform = "scale(1.05)";
+        this.style.transition = "transform 0.3s ease";
+    });
+
+    button.addEventListener('mouseleave', function() {
+        this.style.transform = "scale(1)";
+    });
+});
